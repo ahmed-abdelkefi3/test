@@ -1,0 +1,8 @@
+1)delete from film where titre like '%i';
+2) UPDATE film SET budget=120000 where numF=120;
+3)select titre from film where genre='tragic' order by DateRealisation desc;
+select titre from film where genre='comedie' order by DateRealisation desc;
+4)select salaireReal from film, salaireReal=(select salaire from film where duree=5 + select salaire from film where salaire =3);
+5)Alter table film add semestre number ;
+select semestre from film , semestre = (1 where DateRealisation=to_date('%_x_%')and x between 9 and 12 OR 2 where DateRealisation=to_date('%_y_%') and y between 1 and 6);
+6)select agent from acteur where (specialite<>'comedien' and specialite<>'tragedique');
